@@ -10,3 +10,4 @@
  * Tower defense game where defending against a bunch of packets in a DDOS attack
  * A stealth game where you're a rogue packet trying to sneak into a server to shut it down.
  * a stealth game were you are a packet trying to escape.  If you succeed, you ruin someone's online gaming experience [@jrhii]
+ * AudioSurfer/GuitarHero madlibs
