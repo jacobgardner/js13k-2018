@@ -11,3 +11,4 @@
  * A stealth game where you're a rogue packet trying to sneak into a server to shut it down.
  * a stealth game were you are a packet trying to escape.  If you succeed, you ruin someone's online gaming experience [@jrhii]
  * AudioSurfer/GuitarHero madlibs
+ * A line of people standing in the woods need to be sprayed with Off!
