@@ -1,0 +1,24 @@
+{
+  "name": "js13k-2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobgardner/js13k-2018.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacobgardner/js13k-2018/issues"
+  },
+  "homepage": "https://github.com/jacobgardner/js13k-2018#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-sequence": "^1.0.0"
+  }
+}
