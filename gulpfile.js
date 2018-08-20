@@ -1,32 +1,33 @@
-const gulp = require("gulp");
-const browserSync = require("browser-sync").create();
-const sequence = require("gulp-sequence");
+const gulp = require('gulp');
+const browserSync = require('browser-sync').create();
+const sequence = require('gulp-sequence');
 
 require('./tasks');
 
-gulp.task("build", (cb) => {
-    sequence(["build-shaders", "build-audio"], "build-scripts", "reload")(cb);
+gulp.task('build', cb => {
+    sequence('build-scripts', 'reload')(cb);
 });
 
-gulp.task("reload", () => {
+gulp.task('reload', () => {
     browserSync.reload();
 });
 
-gulp.task("browserSync-init", () => {
+gulp.task('browserSync-init', () => {
     return browserSync.init({
         server: {
-            baseDir: "./"
-        }
+            baseDir: './'
+        },
+        open: false
     });
 });
 
-gulp.task("watch-js", ["build"], () => {
+gulp.task('watch-js', ['build'], () => {
     return gulp.watch(
-        ["src/**/*", "assets/**/*", "!src/shaders/**/*", "!src/music/**/*"],
-        ["build"]
+        ['src/**/*', 'assets/**/*', '!src/shaders/**/*', '!src/music/**/*'],
+        ['build']
     );
 });
 
-gulp.task("watch", ["watch-js"]);
-gulp.task("serve", sequence("browserSync-init", "watch"));
-gulp.task("default", ["serve"]);
+gulp.task('watch', ['watch-js']);
+gulp.task('serve', sequence('browserSync-init', 'watch'));
+gulp.task('default', ['serve']);

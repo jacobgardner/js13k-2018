@@ -19,6 +19,20 @@
   "devDependencies": {
     "browser-sync": "^2.24.6",
     "gulp": "^3.9.1",
-    "gulp-sequence": "^1.0.0"
+    "gulp-babel-minify": "^0.4.3",
+    "gulp-better-rollup": "^3.3.0",
+    "gulp-insert": "^0.5.0",
+    "gulp-preprocess": "^3.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-rollup": "^2.16.2",
+    "gulp-sequence": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-typescript": "^5.0.0-alpha.3",
+    "gulp-zip": "^4.2.0",
+    "html-minifier": "^3.5.20",
+    "rollup-plugin-typescript": "^0.8.1",
+    "through2": "^2.0.3",
+    "typescript": "^3.0.1"
   }
 }
